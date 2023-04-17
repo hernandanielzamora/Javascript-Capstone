@@ -13,6 +13,12 @@ body {
   background-color: #263238;
 }
 
+.title {
+  color: yellow;
+  font-size: 4em;
+  text-align: center;
+}
+
 header {
   background-color: #ef5350;
 }
@@ -42,8 +48,83 @@ header {
 }
 
 /* Cards Section */
-.cards-section {
-  height: 81.8vh;
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2em;
+  gap: 10%;
+}
+
+.card {
+  width: 17em;
+  height: auto;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 25px;
+  background: #ef5350;
+  box-shadow: 0 0 0.5em #ff3c00;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 12em;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.like-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.like-count {
+  font-size: 1.7em;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.card-content p {
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container button {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 3%;
+  font-size: 1.2em;
 }
 
 /* Footer */
@@ -63,6 +144,7 @@ footer h2 {
 
 /* QueryMedia */
 @media (min-width: 768px) {
+
   /* NavBar */
   .nav-bar {
     margin-left: 7%;
