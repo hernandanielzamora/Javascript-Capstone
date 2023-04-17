@@ -5,7 +5,11 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _modules_fetchingData_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
+
+
+(0,_modules_fetchingData_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
 
 /***/ }),
 /* 1 */
@@ -317,7 +321,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "a {\n  width: 20px;\n  height: 20px;\n}\n\nimg {\n  width: 20px;\n  height: 20px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Normalize */\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  scroll-behavior: smooth;\r\n  list-style-type: none;\r\n  font-family: 'Kanit', sans-serif;\r\n}\r\n\r\n/* Header - NavBar */\r\nbody {\r\n  background-color: #263238;\r\n}\r\n\r\n.title {\r\n  color: yellow;\r\n  font-size: 4em;\r\n  text-align: center;\r\n}\r\n\r\nheader {\r\n  background-color: #ef5350;\r\n}\r\n\r\n.nav-bar {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  margin-left: 30%;\r\n}\r\n\r\n.navbar-list {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  width: 30%;\r\n  gap: 1.5em;\r\n}\r\n\r\n.navbar-img {\r\n  height: 5em;\r\n  padding-top: 0.5em;\r\n}\r\n\r\n.navbar-item a {\r\n  text-decoration: none;\r\n  color: yellow;\r\n}\r\n\r\n/* Cards Section */\r\n.cards-container {\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  margin-top: 2em;\r\n  gap: 10%;\r\n}\r\n\r\n.card {\r\n  width: 17em;\r\n  height: auto;\r\n  margin: 2em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 1rem 0.5rem;\r\n  border-radius: 25px;\r\n  background: #ef5350;\r\n  box-shadow: 0 0 0.5em #ff3c00;\r\n}\r\n\r\n.card-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.card-img {\r\n  width: 12em;\r\n  height: auto;\r\n  background-color: rgb(255, 255, 255);\r\n  border-radius: 20px;\r\n  margin-bottom: 3%;\r\n}\r\n\r\n.card-header {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 20px;\r\n}\r\n\r\n.like-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 3%;\r\n}\r\n\r\n.like-btn {\r\n  background: none;\r\n  border: none;\r\n  font-size: 1.7em;\r\n  cursor: pointer;\r\n}\r\n\r\n.like-count {\r\n  font-size: 1.7em;\r\n  text-align: center;\r\n  margin-top: -15px;\r\n}\r\n\r\n.card-content p {\r\n  font-size: 1.5em;\r\n  margin-bottom: 5%;\r\n}\r\n\r\n.button-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.button-container button {\r\n  width: 100%;\r\n  margin-bottom: 5%;\r\n  padding: 3%;\r\n  font-size: 1.2em;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  background-color: #ef5350;\r\n  padding: 1em;\r\n}\r\n\r\nfooter h2 {\r\n  font-size: 1em;\r\n}\r\n\r\n.footer-link {\r\n  text-decoration: none;\r\n  color: yellow;\r\n}\r\n\r\n/* QueryMedia */\r\n@media (min-width: 768px) {\r\n\r\n  /* NavBar */\r\n  .nav-bar {\r\n    margin-left: 7%;\r\n    font-size: 1.25em;\r\n  }\r\n\r\n  /* Footer */\r\n  footer h2 {\r\n    font-size: 1.5em;\r\n  }\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -421,6 +425,46 @@ module.exports = function (cssWithMappingToString) {
   };
   return list;
 };
+
+/***/ }),
+/* 11 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const fetchPokemons = async () => {
+  const cardsContainer = document.getElementById('cards-container');
+  const res = await fetch('https://pokeapi.co/api/v2/pokemon');
+  const data = await res.json();
+  const newArray = data.results;
+  newArray.forEach(async (i) => {
+    const res = await fetch(i.url);
+    const data = await res.json();
+    const card = document.createElement('div');
+    card.classList = 'card';
+    card.id = `${data.id}`;
+    card.innerHTML = `<div class="card-content">
+                          <img src="${data.sprites.front_default}" alt="${data.name}" class="card-img">
+                          <div class="card-header">
+                            <h2>${data.name.toUpperCase()}</h2>
+                          </div>
+                          <div class="like-container">
+                            <button class='like-btn' id="like-btn"><i class='fa-regular fa-heart'></i></button></li>
+                            <span class='like-count'>100</span>
+                          </div>
+                          <div class="button-container">
+                            <button class="comment-btn" id="comment-btn">Comments</button>
+                            <button class="reservation-btn" id="reservation-btn">Reservation</button>                     
+                          </div>
+                        </div>
+      `;
+    cardsContainer.appendChild(card);
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchPokemons);
 
 /***/ })
 ],
