@@ -5,7 +5,7 @@
 import listCounter from '../modules/listCounter.js';
 
 describe('Test Items Counter', () => {
-  const link = document.createElement('p');
+  const p = document.createElement('p');
   const data = [
     {
       name: 'BULBASAUR',
@@ -27,9 +27,7 @@ describe('Test Items Counter', () => {
     },
   ];
 
-  const count = listCounter(data.length, link);
+  const counter = listCounter(data.length, p);
 
-  test('The amount of items = 3', () => {
-    expect(count).toBe(3);
-  });
+  test('The amount of items = 3', () => { expect(counter).toBe(3); });
 });
