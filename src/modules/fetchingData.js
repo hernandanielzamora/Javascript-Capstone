@@ -18,7 +18,7 @@ const fetchPokemons = async () => {
       const card = document.createElement('div');
       card.classList = 'card';
       card.id = `${data.id}`;
-      card.innerHTML = `<img src="${data.sprites.front_default}" alt="${data.name}" class="card-img">
+      card.innerHTML = ` <img src="${data.sprites.front_default}" alt="${data.name}" class="card-img">
                          <div class="card-header">
                            <h2>${data.name.toUpperCase()}</h2>
                          </div>
@@ -29,6 +29,7 @@ const fetchPokemons = async () => {
                          <div class="button-container">
                            <button class="comment-btn" id="comment-btn">Comments</button>
                            <button class="reservation-btn" id="reservation-btn">Reservation</button>
+                         </div>
          `;
       cardsContainer.appendChild(card);
     });
