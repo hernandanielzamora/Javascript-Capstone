@@ -127,6 +127,47 @@ header {
   font-size: 1.2em;
 }
 
+/* Comments Popup */
+.no-scroll {
+  overflow: hidden;
+  position: sticky;
+}
+
+#closeDialoge {
+  color: #000;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  align-self: flex-end;
+}
+
+.dialog-container {
+  position: fixed;
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  background-color: #ef5350;
+  width: 95%;
+  height: 95%;
+  border-radius: 2%;
+  padding: 8% 4% 8% 4%;
+  gap: 5%;
+  margin: auto;
+}
+
+.dialog-container::backdrop {
+  background-color: #263238;
+}
+
+.dialog-container .card-img {
+  width: 100%;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Footer */
 footer {
   background-color: #ef5350;

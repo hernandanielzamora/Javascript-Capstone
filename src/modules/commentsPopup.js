@@ -7,6 +7,7 @@ const popGenrato = () => {
     btn.addEventListener('click', () => {
       const dialogContainer = document.querySelector(btn.dataset.modalTarget);
       document.body.classList.add('no-scroll');
+      dialogContainer.classList.add('dialog-container');
       dialogContainer.showModal();
     });
   });
@@ -15,7 +16,9 @@ const popGenrato = () => {
   closeButton.forEach((btnC) => {
     btnC.addEventListener('click', () => {
       const popup = btnC.closest('.dialog-container');
+      const dialogContainer = document.querySelector('.dialog-container');
       popup.close();
+      dialogContainer.classList.remove('dialog-container');
       document.body.classList.remove('no-scroll');
     });
   });
