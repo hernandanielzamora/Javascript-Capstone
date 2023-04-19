@@ -7,7 +7,7 @@ const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capston
 const DisplayReservations = async () => {
   const cardContainers = document.querySelectorAll('.card');
   cardContainers.forEach((card) => {
-    const reservationsTitle = card.querySelector('.reservation-title');
+    const reservationsTitle = card.querySelectorAll('.reservation-title');
     const openModalBtn = card.querySelectorAll('[data-modal-target]');
     openModalBtn.forEach((btn) => {
       btn.addEventListener('click', async () => {
@@ -22,11 +22,11 @@ const DisplayReservations = async () => {
             li.innerHTML = `${reservation.date_start} - ${reservation.date_end} por ${reservation.username}`;
             div.appendChild(li);
           });
-          if (reservationsCounter > 0) {
-            ReservationsCounter(reservationsCounter, reservationsTitle);
-          } else {
-            reservationsTitle.innerHTML = 'Reservations (0)';
-          }
+          reservationsTitle.forEach((title) => {
+            if (reservationsCounter > 0) {
+              ReservationsCounter(reservationsCounter, title);
+            }
+          });
         } catch (error) {
           const errorMessage = 'Error, try again later.';
           const errorElement = document.createElement('div');

@@ -200,7 +200,7 @@ header {
 }
 
 .reservations-list {
-  height: 200px;
+  height: auto;
 }
 
 /* Footer */
