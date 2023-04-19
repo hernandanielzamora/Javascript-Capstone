@@ -73,7 +73,7 @@ const fetchPokemons = async () => {
                                 <p>Order: ${data.order}</p>
                               </div>
                             </div>
-                            <h2 class="reservation-title">Reservations</h2>
+                            <h2 class="reservation-title" id="reservation-title">Reservations</h2>
                             <div class="reservations-list" id="reservations-list">
                             </div>
                           </div>
