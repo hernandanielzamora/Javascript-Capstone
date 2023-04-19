@@ -4,6 +4,7 @@ import popGenrato from './commentsPopup.js';
 import ReservationModal from './reservationsModal.js';
 import DisplayReservations from './displayReservations.js';
 import DisplayComments from './displayComments.js';
+import postComments from './commentsForm.js';
 
 const pokeCount = document.getElementById('poke-count');
 const cardsContainer = document.getElementById('cards-container');
@@ -65,7 +66,7 @@ const fetchPokemons = async () => {
                             <input type="text" id="name" placeholder="Your name">
                             <label for="insights"></label>
                             <textarea name="insights" id="insights" cols="50" rows="5" placeholder="Your insights"></textarea>
-                            <button type="submit" id="comments-btn">Comment</button>
+                            <button type="button" id="item${data.id}" class="comments-btn">Comment</button>
                           </form>
                         </dialog>
                          <dialog id='modal${data.id}' class='reservation-modal'>
@@ -103,6 +104,7 @@ const fetchPokemons = async () => {
     popGenrato();
     ReservationModal();
     DisplayComments();
+    postComments();
     pokemonCount(newArray.length, pokeCount);
     DisplayReservations();
   } catch (error) {
