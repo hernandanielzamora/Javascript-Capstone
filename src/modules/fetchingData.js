@@ -3,6 +3,7 @@ import pokemonCount from './listCounter.js';
 import popGenrato from './commentsPopup.js';
 import ReservationModal from './reservationsModal.js';
 import DisplayReservations from './displayReservations.js';
+import DisplayComments from './displayComments.js';
 
 const pokeCount = document.getElementById('poke-count');
 const cardsContainer = document.getElementById('cards-container');
@@ -30,7 +31,7 @@ const fetchPokemons = async () => {
                            <span class="like-count">0</span>
                          </div>
                          <div class="button-container">
-                           <button  data-modal-target="#popup${data.id}" class="comment-btn" id="comment-btn">Comments</button>
+                           <button  data-modal-target="#popup${data.id}" class="comment-btn" id="${data.id}">Comments</button>
                            <button data-modal-target="#modal${data.id}" class="reservation-btn" id='${data.id}'>Reservations</button>
                          </div>
                          <dialog id='popup${data.id}' class=''>
@@ -40,17 +41,22 @@ const fetchPokemons = async () => {
                             </svg>
                           </button>
                           <img src="${data.sprites.front_default}" alt="${data.name}" class="card-img">
-                          <div class="card-header">
+                          <div class="reservation-header">
                             <h2>${data.name.toUpperCase()}</h2>
                           </div>
-                          <div class="specs">
-                            <div class=>
-                              <p>Weight: ${data.weight}</p>
-                              <p>Height: ${data.height}</p>
+                          <div class="reservations-details">
+                            <div class="specs">
+                              <div class=>
+                                <p>Weight: ${data.weight}</p>
+                                <p>Height: ${data.height}</p>
+                              </div>
+                              <div>
+                                <p>Base experience: ${data.base_experience}</p>
+                                <p>Order: ${data.order}</p>
+                              </div>
                             </div>
-                            <div>
-                              <p>Base experience: ${data.base_experience}</p>
-                              <p>Order: ${data.order}</p>
+                            <h2 class="reservation-title">Comments</h2>
+                            <div class="comments-list" id="comments-list">
                             </div>
                           </div>
                         </dialog>
@@ -88,6 +94,7 @@ const fetchPokemons = async () => {
     interactionLike();
     popGenrato();
     ReservationModal();
+    DisplayComments();
     pokemonCount(newArray.length, pokeCount);
     DisplayReservations();
   } catch (error) {
