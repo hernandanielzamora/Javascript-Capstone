@@ -2,6 +2,7 @@ import { getLikes, interactionLike } from './numbOfLikes.js';
 import pokemonCount from './listCounter.js';
 import popGenrato from './commentsPopup.js';
 import ReservationModal from './reservationsModal.js';
+import DisplayReservations from './displayReservations.js';
 
 const pokeCount = document.getElementById('poke-count');
 const cardsContainer = document.getElementById('cards-container');
@@ -30,7 +31,7 @@ const fetchPokemons = async () => {
                          </div>
                          <div class="button-container">
                            <button  data-modal-target="#popup${data.id}" class="comment-btn" id="comment-btn">Comments</button>
-                           <button data-modal-target="#modal${data.id}" class="reservation-btn" id="reservation-btn">Reservation</button>
+                           <button data-modal-target="#modal${data.id}" class="reservation-btn" id='${data.id}'>Reservations</button>
                          </div>
                          <dialog id='popup${data.id}' class=''>
                           <button data-close-button id='closeDialoge' class='absolute btn-noBg' type='button' title='closing button'>
@@ -58,17 +59,22 @@ const fetchPokemons = async () => {
                            <i class="fa-solid fa-xmark fa-2xl"></i>
                           </button>
                           <img src="${data.sprites.front_default}" alt="${data.name}" class="modal-card-img">
-                          <div class="card-header">
+                          <div class="reservation-header">
                             <h2>${data.name.toUpperCase()}</h2>
                           </div>
-                          <div class="specs">
-                            <div class="specs-top" >
-                              <p>Weight: ${data.weight}</p>
-                              <p>Height: ${data.height}</p>
+                          <div class="reservations-details">
+                            <div class="specs">
+                              <div class="specs-top" >
+                                <p>Weight: ${data.weight}</p>
+                                <p>Height: ${data.height}</p>
+                              </div>
+                              <div class="specs-bottom">
+                                <p>Base experience: ${data.base_experience}</p>
+                                <p>Order: ${data.order}</p>
+                              </div>
                             </div>
-                            <div class="specs-bottom">
-                              <p>Base experience: ${data.base_experience}</p>
-                              <p>Order: ${data.order}</p>
+                            <h2 class="reservation-title">Reservations</h2>
+                            <div class="reservations-list" id="reservations-list">
                             </div>
                           </div>
                         </dialog>
@@ -83,6 +89,7 @@ const fetchPokemons = async () => {
     popGenrato();
     ReservationModal();
     pokemonCount(newArray.length, pokeCount);
+    DisplayReservations();
   } catch (error) {
     const errorMessage = 'Error, try again later.';
     const errorElement = document.createElement('div');
