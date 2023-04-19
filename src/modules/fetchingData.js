@@ -1,6 +1,7 @@
 import { getLikes, interactionLike } from './numbOfLikes.js';
 import pokemonCount from './listCounter.js';
 import popGenrato from './commentsPopup.js';
+import ReservationModal from './reservationsModal.js';
 
 const pokeCount = document.getElementById('poke-count');
 const cardsContainer = document.getElementById('cards-container');
@@ -29,7 +30,7 @@ const fetchPokemons = async () => {
                          </div>
                          <div class="button-container">
                            <button  data-modal-target="#popup${data.id}" class="comment-btn" id="comment-btn">Comments</button>
-                           <button class="reservation-btn" id="reservation-btn">Reservation</button>
+                           <button data-modal-target="#modal${data.id}" class="reservation-btn" id="reservation-btn">Reservation</button>
                          </div>
                          <dialog id='popup${data.id}' class=''>
                           <button data-close-button id='closeDialoge' class='absolute btn-noBg' type='button' title='closing button'>
@@ -52,6 +53,25 @@ const fetchPokemons = async () => {
                             </div>
                           </div>
                         </dialog>
+                         <dialog id='modal${data.id}' class='reservation-modal'>
+                          <button data-close-button id='closeDialoge' class='absolute btn-noBg' type='button' title='closing button'>
+                           <i class="fa-solid fa-xmark fa-2xl"></i>
+                          </button>
+                          <img src="${data.sprites.front_default}" alt="${data.name}" class="modal-card-img">
+                          <div class="card-header">
+                            <h2>${data.name.toUpperCase()}</h2>
+                          </div>
+                          <div class="specs">
+                            <div class="specs-top" >
+                              <p>Weight: ${data.weight}</p>
+                              <p>Height: ${data.height}</p>
+                            </div>
+                            <div class="specs-bottom">
+                              <p>Base experience: ${data.base_experience}</p>
+                              <p>Order: ${data.order}</p>
+                            </div>
+                          </div>
+                        </dialog>
          `;
       cardsContainer.appendChild(card);
     });
@@ -61,6 +81,7 @@ const fetchPokemons = async () => {
     getLikes();
     interactionLike();
     popGenrato();
+    ReservationModal();
     pokemonCount(newArray.length, pokeCount);
   } catch (error) {
     const errorMessage = 'Error, try again later.';

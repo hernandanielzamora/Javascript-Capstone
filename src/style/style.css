@@ -5,7 +5,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   list-style-type: none;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 /* Header - NavBar */
@@ -125,6 +125,7 @@ header {
   margin-bottom: 5%;
   padding: 3%;
   font-size: 1.2em;
+  cursor: pointer;
 }
 
 /* Comments Popup */
@@ -139,6 +140,8 @@ header {
   height: 40px;
   width: 40px;
   align-self: flex-end;
+  border: none;
+  cursor: pointer;
 }
 
 .dialog-container {
@@ -146,9 +149,10 @@ header {
   border-color: transparent;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #ef5350;
-  width: 95%;
-  height: 95%;
+  width: 70vw;
+  height: auto;
   border-radius: 2%;
   padding: 8% 4% 8% 4%;
   gap: 5%;
@@ -159,13 +163,18 @@ header {
   background-color: #263238;
 }
 
-.dialog-container .card-img {
-  width: 100%;
-}
-
 .specs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.modal-card-img {
+  width: 25%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 /* Footer */
