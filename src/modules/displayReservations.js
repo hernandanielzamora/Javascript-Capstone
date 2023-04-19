@@ -1,4 +1,5 @@
 import ReservationsCounter from './reservationsCounter.js';
+
 /* Involvement Api */
 const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/reservations';
 
