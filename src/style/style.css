@@ -151,12 +151,11 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #ef5350;
-  width: 70vw;
-  height: auto;
+  width: 60vw;
   border-radius: 2%;
-  padding: 8% 4% 8% 4%;
-  gap: 5%;
   margin: auto;
+  padding: 2%;
+  gap: 2%;
 }
 
 .dialog-container::backdrop {
@@ -171,10 +170,33 @@ header {
 }
 
 .modal-card-img {
-  width: 25%;
+  width: 20%;
   height: auto;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
+}
+
+/* Reservations Modal */
+
+.reservation-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reservations-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.reservations-list {
+  height: 200px;
 }
 
 /* Footer */
