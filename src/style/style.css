@@ -176,6 +176,10 @@ header {
   border-radius: 20px;
 }
 
+.comments-list {
+  height: 200px;
+}
+
 /* Reservations Modal */
 
 .reservation-header {
