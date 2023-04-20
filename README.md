@@ -95,7 +95,7 @@
 
 Walking through the pokedex project.
 
-- [Project Presentation Link]()
+- [Project Presentation Link](https://www.loom.com/share/17f6ddd2df894a2dbab28889001c9ac1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
