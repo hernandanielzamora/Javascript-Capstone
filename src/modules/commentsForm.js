@@ -1,8 +1,9 @@
-import CommentsCounter from './commentsCounter.js';
+import commentsCounter from './commentsCounter.js';
 
+/* API */
 const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/comments';
 
-// send new score to API
+/* Sending data to the API */
 export const broadcast = async (raw) => {
   const myHeaders = new Headers();
   myHeaders.append('Content-Type', 'application/json');
@@ -18,17 +19,21 @@ export const broadcast = async (raw) => {
 
 /* Getting comments from the form and prepair it to be handeled by the API */
 const postComments = async () => {
+  /* Selecting the cards */
   const cardContainers = document.querySelectorAll('.card');
   cardContainers.forEach((card) => {
+    /* Selecting cards components (btns - title) */
     const openModalBtn = card.querySelectorAll('.comments-btn');
     const commentTitle = card.querySelectorAll('.comment-title');
     openModalBtn.forEach((btn) => {
       btn.addEventListener('click', async () => {
+        /* Getting the values from the form */
         const raw = JSON.stringify({
           item_id: `${btn.id}`,
           username: card.querySelector('input').value,
           comment: card.querySelector('textarea').value,
         });
+        /* Reset Form */
         card.querySelector('input').value = '';
         card.querySelector('textarea').value = '';
         await broadcast(raw);
@@ -44,7 +49,7 @@ const postComments = async () => {
           div.appendChild(li);
         });
         commentTitle.forEach((title) => {
-          CommentsCounter(commentCounter, title);
+          commentsCounter(commentCounter, title);
         });
       });
     });

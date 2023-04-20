@@ -178,7 +178,7 @@ header {
 }
 
 .comments-list {
-  height: 200px;
+  height: calc(250px);
 }
 
 .comments-form {

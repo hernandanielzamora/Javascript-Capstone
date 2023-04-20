@@ -1,7 +1,7 @@
 /* Reservations counter */
-const ReservationsCounter = (counter, link) => {
+const reservationsCounter = (counter, link) => {
   link.innerHTML = `Reservations (${counter})`;
   return counter;
 };
 
-export default ReservationsCounter;
+export default reservationsCounter;

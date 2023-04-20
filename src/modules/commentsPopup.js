@@ -1,6 +1,6 @@
 /* Detail Popup Window */
 
-const popGenrato = () => {
+const commentsModal = () => {
   // Open comments popup
   const opnPopBtn = document.querySelectorAll('[data-modal-target]');
   opnPopBtn.forEach((btn) => {
@@ -24,4 +24,4 @@ const popGenrato = () => {
   });
 };
 
-export default popGenrato;
+export default commentsModal;

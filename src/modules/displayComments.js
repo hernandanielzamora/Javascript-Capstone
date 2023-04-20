@@ -1,4 +1,4 @@
-import CommentsCounter from './commentsCounter.js';
+import commentsCounter from './commentsCounter.js';
 
 /* App Api */
 const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/comments';
@@ -14,7 +14,7 @@ const DisplayComments = async () => {
         try {
           const res = await fetch(`${BASE_URL}?item_id=item${btn.id}`);
           const data = await res.json();
-          const commentsCounter = data.length;
+          const commentCounter = data.length;
           const div = card.querySelector('.comments-list');
           div.innerHTML = '';
           data.forEach((comment) => {
@@ -22,8 +22,8 @@ const DisplayComments = async () => {
             li.innerHTML = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
             div.appendChild(li);
           });
-          if (commentsCounter > 0) {
-            CommentsCounter(commentsCounter, commentsTitle);
+          if (commentCounter > 0) {
+            commentsCounter(commentCounter, commentsTitle);
           } else {
             commentsTitle.innerHTML = 'Comments (0)';
           }

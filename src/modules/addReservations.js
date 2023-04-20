@@ -1,18 +1,21 @@
-import ReservationsCounter from './reservationsCounter.js';
+import reservationsCounter from './reservationsCounter.js';
 
 /* Involvement Api */
 const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/reservations';
 
 /* Display new reservations list using the Involvement API */
-const AddReservations = async () => {
+const addReservations = async () => {
+  /* Selecting the cards */
   const cardContainers = document.querySelectorAll('.card');
   cardContainers.forEach((card) => {
+    /* Selecting cards components (btns - title) */
     const openModalBtn = card.querySelectorAll('.add-reservation');
     const reservationsTitle = card.querySelectorAll('.reservation-title');
     openModalBtn.forEach((btn) => {
       btn.addEventListener('click', async (event) => {
         event.preventDefault();
         const reservationForm = card.querySelectorAll('.reservation-form');
+        /* Getting the values from the form */
         reservationForm.forEach(async (form) => {
           const data = {
             item_id: `${card.id}`,
@@ -27,23 +30,24 @@ const AddReservations = async () => {
             redirect: 'follow',
           };
           await fetch(BASE_URL, requestOptions);
+          /* Reset the form */
           form.querySelector('#name').value = '';
           form.querySelector('#start_date').value = '';
           form.querySelector('#end_date').value = '';
           /* Reload Reservations */
           const res = await fetch(`${BASE_URL}?item_id=${card.id}`);
           const reservations = await res.json();
-          const reservationsCounter = reservations.length;
+          const reservationCounter = reservations.length;
           const div = card.querySelector('.reservations-list');
           div.innerHTML = '';
           reservations.forEach((reservation) => {
             const li = document.createElement('li');
-            li.innerHTML = `${reservation.date_start} - ${reservation.date_end} by ${reservation.username}`;
+            li.innerHTML = `From: ${reservation.date_start} / To: ${reservation.date_end} by ${reservation.username}`;
             div.appendChild(li);
           });
           reservationsTitle.forEach((title) => {
-            if (reservationsCounter > 0) {
-              ReservationsCounter(reservationsCounter, title);
+            if (reservationCounter > 0) {
+              reservationsCounter(reservationCounter, title);
             }
           });
         });
@@ -52,4 +56,4 @@ const AddReservations = async () => {
   });
 };
 
-export default AddReservations;
+export default addReservations;

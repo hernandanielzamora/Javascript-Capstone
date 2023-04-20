@@ -1,6 +1,6 @@
 /* Detailed Reservation Modal */
 
-const ReservationModal = () => {
+const reservationModal = () => {
   // Open reservation modal
   const openModalBtn = document.querySelectorAll('[data-modal-target]');
   openModalBtn.forEach((btn) => {
@@ -30,4 +30,4 @@ const ReservationModal = () => {
   });
 };
 
-export default ReservationModal;
+export default reservationModal;

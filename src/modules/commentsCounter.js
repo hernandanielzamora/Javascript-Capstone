@@ -1,7 +1,7 @@
 /* Comments counter */
-const CommentsCounter = (counter, link) => {
+const commentsCounter = (counter, link) => {
   link.innerHTML = `Comments (${counter})`;
   return counter;
 };
 
-export default CommentsCounter;
+export default commentsCounter;
