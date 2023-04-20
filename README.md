@@ -17,6 +17,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [:movie_camera: Project Presentation](#project-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -85,6 +86,16 @@
 
 - [Hosted on Gethub](https://hernandanielzamora.github.io/Javascript-Capstone/dist/)
 - [Hosted on Netlify](https://javascript-capstone.netlify.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Project Presntation -->
+
+## :movie_camera: Project Presentation <a name="project-presentation"></a>
+
+Walking through the pokedex project.
+
+- [Project Presentation Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
