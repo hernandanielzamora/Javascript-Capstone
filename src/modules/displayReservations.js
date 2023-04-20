@@ -19,7 +19,7 @@ const DisplayReservations = async () => {
           div.innerHTML = '';
           data.forEach((reservation) => {
             const li = document.createElement('li');
-            li.innerHTML = `${reservation.date_start} - ${reservation.date_end} por ${reservation.username}`;
+            li.innerHTML = `${reservation.date_start} - ${reservation.date_end} by ${reservation.username}`;
             div.appendChild(li);
           });
           reservationsTitle.forEach((title) => {
