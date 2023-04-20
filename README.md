@@ -37,7 +37,7 @@
 # 📖 Pokedex<a name="about-project"></a>
 
 
-**Pokedex app**  is a singel page JavaScript project, Built using ES6 features and webpack bundler, notably modules, and consume the PokeAPI using JavaScript async/await.
+**Pokedex**  is a JavaScript single-page Application, Built using ES6 features and Webpack bundler, notably modules, and consumes the PokeAPI using JavaScript async/await.
 
 ## 🛠 Built With <a name="built-with"></a>
 
