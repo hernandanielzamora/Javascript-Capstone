@@ -1,0 +1,299 @@
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Header - NavBar */
+body {
+  background-color: #263238;
+}
+
+.title {
+  color: yellow;
+  font-size: 4em;
+  text-align: center;
+}
+
+header {
+  background-color: #ef5350;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30%;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  gap: 1.5em;
+}
+
+.navbar-img {
+  height: 5em;
+  padding-top: 0.5em;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: yellow;
+}
+
+/* Cards Section */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2em;
+  gap: 10%;
+}
+
+.card {
+  width: 17em;
+  height: auto;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 25px;
+  background: #ef5350;
+  box-shadow: 0 0 0.5em #ff3c00;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 12em;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.like-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.like-count {
+  font-size: 1.7em;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.card-content p {
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container button {
+  width: 120%;
+  margin-bottom: 5%;
+  padding: 3%;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Comments Popup */
+.no-scroll {
+  overflow: hidden;
+  position: sticky;
+}
+
+#closeDialoge {
+  color: #000;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+}
+
+.dialog-container {
+  position: fixed;
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ef5350;
+  width: 60vw;
+  border-radius: 2%;
+  margin: auto;
+  padding: 2%;
+  gap: 2%;
+  box-sizing: initial;
+}
+
+.dialog-container::backdrop {
+  background-color: #263238;
+}
+
+.specs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.modal-card-img {
+  width: 20%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.comments-list {
+  height: calc(250px);
+}
+
+.comments-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.comments-title {
+  align-self: center;
+}
+
+label {
+  display: none;
+}
+
+input,
+textarea {
+  padding: 10px;
+}
+
+.comments-form textarea {
+  width: 100%;
+}
+
+.comments-btn {
+  padding: 5px;
+}
+
+/* Reservations Modal */
+
+.reservation-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reservations-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.reservations-list {
+  height: auto;
+}
+
+.reservation-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reservation-form input {
+  width: 60%;
+  padding: 1%;
+  margin-bottom: 10px;
+}
+
+.reservation-form button {
+  width: 50%;
+  font-size: 1.3em;
+  cursor: pointer;
+  padding: 2%;
+  margin-top: 5%;
+  border-radius: 15px;
+}
+
+.reservation-form button:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+
+/* Footer */
+footer {
+  background-color: #ef5350;
+  padding: 1em;
+}
+
+footer h2 {
+  font-size: 1em;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: yellow;
+}
+
+/* QueryMedia */
+@media (min-width: 768px) {
+  /* NavBar */
+  .nav-bar {
+    margin-left: 7%;
+    font-size: 1.25em;
+  }
+
+  /* Comments Popup */
+  .comments-form {
+    width: 65%;
+  }
+
+  .comments-form textarea {
+    width: 50%;
+  }
+
+  /* Footer */
+  footer h2 {
+    font-size: 1.5em;
+  }
+}
