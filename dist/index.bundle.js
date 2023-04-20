@@ -321,7 +321,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Normalize */\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  scroll-behavior: smooth;\r\n  list-style-type: none;\r\n  font-family: \"Kanit\", sans-serif;\r\n}\r\n\r\n/* Header - NavBar */\r\nbody {\r\n  background-color: #263238;\r\n}\r\n\r\n.title {\r\n  color: yellow;\r\n  font-size: 4em;\r\n  text-align: center;\r\n}\r\n\r\nheader {\r\n  background-color: #ef5350;\r\n}\r\n\r\n.nav-bar {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  margin-left: 30%;\r\n}\r\n\r\n.navbar-list {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  width: 30%;\r\n  gap: 1.5em;\r\n}\r\n\r\n.navbar-img {\r\n  height: 5em;\r\n  padding-top: 0.5em;\r\n}\r\n\r\n.navbar-item a {\r\n  text-decoration: none;\r\n  color: yellow;\r\n}\r\n\r\n/* Cards Section */\r\n.cards-container {\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  margin-top: 2em;\r\n  gap: 10%;\r\n}\r\n\r\n.card {\r\n  width: 17em;\r\n  height: auto;\r\n  margin: 2em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 1rem 0.5rem;\r\n  border-radius: 25px;\r\n  background: #ef5350;\r\n  box-shadow: 0 0 0.5em #ff3c00;\r\n}\r\n\r\n.card-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.card-img {\r\n  width: 12em;\r\n  height: auto;\r\n  background-color: rgb(255, 255, 255);\r\n  border-radius: 20px;\r\n  margin-bottom: 3%;\r\n}\r\n\r\n.card-header {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 20px;\r\n}\r\n\r\n.like-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 3%;\r\n}\r\n\r\n.like-btn {\r\n  background: none;\r\n  border: none;\r\n  font-size: 1.7em;\r\n  cursor: pointer;\r\n}\r\n\r\n.like-count {\r\n  font-size: 1.7em;\r\n  text-align: center;\r\n  margin-top: -15px;\r\n}\r\n\r\n.card-content p {\r\n  font-size: 1.5em;\r\n  margin-bottom: 5%;\r\n}\r\n\r\n.button-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.button-container button {\r\n  width: 120%;\r\n  margin-bottom: 5%;\r\n  padding: 3%;\r\n  font-size: 1.2em;\r\n  cursor: pointer;\r\n}\r\n\r\n/* Comments Popup */\r\n.no-scroll {\r\n  overflow: hidden;\r\n  position: sticky;\r\n}\r\n\r\n#closeDialoge {\r\n  color: #000;\r\n  background-color: transparent;\r\n  height: 40px;\r\n  width: 40px;\r\n  align-self: flex-end;\r\n  border: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.dialog-container {\r\n  position: fixed;\r\n  border-color: transparent;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background-color: #ef5350;\r\n  width: 70vw;\r\n  height: auto;\r\n  border-radius: 2%;\r\n  padding: 8% 4% 8% 4%;\r\n  gap: 5%;\r\n  margin: auto;\r\n}\r\n\r\n.dialog-container::backdrop {\r\n  background-color: #263238;\r\n}\r\n\r\n.specs {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  width: 80%;\r\n}\r\n\r\n.modal-card-img {\r\n  width: 25%;\r\n  height: auto;\r\n  background-color: rgb(255, 255, 255);\r\n  border-radius: 20px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  background-color: #ef5350;\r\n  padding: 1em;\r\n}\r\n\r\nfooter h2 {\r\n  font-size: 1em;\r\n}\r\n\r\n.footer-link {\r\n  text-decoration: none;\r\n  color: yellow;\r\n}\r\n\r\n/* QueryMedia */\r\n@media (min-width: 768px) {\r\n  /* NavBar */\r\n  .nav-bar {\r\n    margin-left: 7%;\r\n    font-size: 1.25em;\r\n  }\r\n\r\n  /* Footer */\r\n  footer h2 {\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Normalize */\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  scroll-behavior: smooth;\r\n  list-style-type: none;\r\n  font-family: 'Kanit', sans-serif;\r\n}\r\n\r\n/* Header - NavBar */\r\nbody {\r\n  background-color: #263238;\r\n}\r\n\r\n.title {\r\n  color: yellow;\r\n  font-size: 4em;\r\n  text-align: center;\r\n}\r\n\r\nheader {\r\n  background-color: #ef5350;\r\n}\r\n\r\n.nav-bar {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  margin-left: 30%;\r\n}\r\n\r\n.navbar-list {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  width: 30%;\r\n  gap: 1.5em;\r\n}\r\n\r\n.navbar-img {\r\n  height: 5em;\r\n  padding-top: 0.5em;\r\n}\r\n\r\n.navbar-item a {\r\n  text-decoration: none;\r\n  color: yellow;\r\n}\r\n\r\n/* Cards Section */\r\n.cards-container {\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  margin-top: 2em;\r\n  gap: 10%;\r\n}\r\n\r\n.card {\r\n  width: 17em;\r\n  height: auto;\r\n  margin: 2em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 1rem 0.5rem;\r\n  border-radius: 25px;\r\n  background: #ef5350;\r\n  box-shadow: 0 0 0.5em #ff3c00;\r\n}\r\n\r\n.card-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.card-img {\r\n  width: 12em;\r\n  height: auto;\r\n  background-color: rgb(255, 255, 255);\r\n  border-radius: 20px;\r\n  margin-bottom: 3%;\r\n}\r\n\r\n.card-header {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 20px;\r\n}\r\n\r\n.like-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 3%;\r\n}\r\n\r\n.like-btn {\r\n  background: none;\r\n  border: none;\r\n  font-size: 1.7em;\r\n  cursor: pointer;\r\n}\r\n\r\n.like-count {\r\n  font-size: 1.7em;\r\n  text-align: center;\r\n  margin-top: -15px;\r\n}\r\n\r\n.card-content p {\r\n  font-size: 1.5em;\r\n  margin-bottom: 5%;\r\n}\r\n\r\n.button-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.button-container button {\r\n  width: 120%;\r\n  margin-bottom: 5%;\r\n  padding: 3%;\r\n  font-size: 1.2em;\r\n  cursor: pointer;\r\n}\r\n\r\n/* Comments Popup */\r\n.no-scroll {\r\n  overflow: hidden;\r\n  position: sticky;\r\n}\r\n\r\n#closeDialoge {\r\n  color: #000;\r\n  background-color: transparent;\r\n  height: 40px;\r\n  width: 40px;\r\n  align-self: flex-end;\r\n  border: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.dialog-container {\r\n  position: fixed;\r\n  border-color: transparent;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  background-color: #ef5350;\r\n  width: 60vw;\r\n  border-radius: 2%;\r\n  margin: auto;\r\n  padding: 2%;\r\n  gap: 2%;\r\n  box-sizing: initial;\r\n}\r\n\r\n.dialog-container::backdrop {\r\n  background-color: #263238;\r\n}\r\n\r\n.specs {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  width: 80%;\r\n}\r\n\r\n.modal-card-img {\r\n  width: 20%;\r\n  height: auto;\r\n  background-color: rgb(255, 255, 255);\r\n  border-radius: 20px;\r\n}\r\n\r\n.comments-list {\r\n  height: 200px;\r\n}\r\n\r\n.comments-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n  gap: 20px;\r\n}\r\n\r\n.comments-title {\r\n  align-self: center;\r\n}\r\n\r\nlabel {\r\n  display: none;\r\n}\r\n\r\ninput,\r\ntextarea {\r\n  padding: 10px;\r\n}\r\n\r\n.comments-form textarea {\r\n  width: 100%;\r\n}\r\n\r\n.comments-btn {\r\n  padding: 5px;\r\n}\r\n\r\n/* Reservations Modal */\r\n\r\n.reservation-header {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 20px;\r\n}\r\n\r\n.reservations-details {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  width: 80%;\r\n}\r\n\r\n.reservations-list {\r\n  height: auto;\r\n}\r\n\r\n.reservation-form {\r\n  width: 80%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n}\r\n\r\n.reservation-form input {\r\n  width: 60%;\r\n  padding: 1%;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.reservation-form button {\r\n  width: 50%;\r\n  font-size: 1.3em;\r\n  cursor: pointer;\r\n  padding: 2%;\r\n  margin-top: 5%;\r\n  border-radius: 15px;\r\n}\r\n\r\n.reservation-form button:hover {\r\n  color: white;\r\n  background-color: black;\r\n  border: 2px solid white;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  background-color: #ef5350;\r\n  padding: 1em;\r\n}\r\n\r\nfooter h2 {\r\n  font-size: 1em;\r\n}\r\n\r\n.footer-link {\r\n  text-decoration: none;\r\n  color: yellow;\r\n}\r\n\r\n/* QueryMedia */\r\n@media (min-width: 768px) {\r\n  /* NavBar */\r\n  .nav-bar {\r\n    margin-left: 7%;\r\n    font-size: 1.25em;\r\n  }\r\n\r\n  /* Comments Popup */\r\n  .comments-form {\r\n    width: 65%;\r\n  }\r\n\r\n  .comments-form textarea {\r\n    width: 50%;\r\n  }\r\n\r\n  /* Footer */\r\n  footer h2 {\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -438,6 +438,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _listCounter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
 /* harmony import */ var _commentsPopup_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
 /* harmony import */ var _reservationsModal_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
+/* harmony import */ var _displayReservations_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16);
+/* harmony import */ var _displayComments_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(18);
+/* harmony import */ var _addReservations_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(20);
+/* harmony import */ var _commentsForm_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(21);
+
+
+
+
 
 
 
@@ -469,8 +477,8 @@ const fetchPokemons = async () => {
                            <span class="like-count">0</span>
                          </div>
                          <div class="button-container">
-                           <button  data-modal-target="#popup${data.id}" class="comment-btn" id="comment-btn">Comments</button>
-                           <button data-modal-target="#modal${data.id}" class="reservation-btn" id="reservation-btn">Reservation</button>
+                           <button  data-modal-target="#popup${data.id}" class="comment-btn" id="${data.id}">Comments</button>
+                           <button data-modal-target="#modal${data.id}" class="reservation-btn" id='${data.id}'>Reservations</button>
                          </div>
                          <dialog id='popup${data.id}' class=''>
                           <button data-close-button id='closeDialoge' class='absolute btn-noBg' type='button' title='closing button'>
@@ -479,37 +487,65 @@ const fetchPokemons = async () => {
                             </svg>
                           </button>
                           <img src="${data.sprites.front_default}" alt="${data.name}" class="card-img">
-                          <div class="card-header">
+                          <div class="reservation-header">
                             <h2>${data.name.toUpperCase()}</h2>
                           </div>
-                          <div class="specs">
-                            <div class=>
-                              <p>Weight: ${data.weight}</p>
-                              <p>Height: ${data.height}</p>
+                          <div class="reservations-details">
+                            <div class="specs">
+                              <div class=>
+                                <p>Weight: ${data.weight}</p>
+                                <p>Height: ${data.height}</p>
+                              </div>
+                              <div>
+                                <p>Base experience: ${data.base_experience}</p>
+                                <p>Order: ${data.order}</p>
+                              </div>
                             </div>
-                            <div>
-                              <p>Base experience: ${data.base_experience}</p>
-                              <p>Order: ${data.order}</p>
+                            <h3 class="comment-title">Comments</h3>
+                            <div class="comments-list" id="comments-list">
                             </div>
                           </div>
+                          <form class="comments-form" action="">
+                            <h3 class="comments-title">Add a comment</h3>
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Your name">
+                            <label for="insights"></label>
+                            <textarea name="insights" id="insights" cols="50" rows="5" placeholder="Your insights"></textarea>
+                            <button type="button" id="item${data.id}" class="comments-btn">Comment</button>
+                          </form>
                         </dialog>
                          <dialog id='modal${data.id}' class='reservation-modal'>
                           <button data-close-button id='closeDialoge' class='absolute btn-noBg' type='button' title='closing button'>
                            <i class="fa-solid fa-xmark fa-2xl"></i>
                           </button>
                           <img src="${data.sprites.front_default}" alt="${data.name}" class="modal-card-img">
-                          <div class="card-header">
+                          <div class="reservation-header">
                             <h2>${data.name.toUpperCase()}</h2>
                           </div>
-                          <div class="specs">
-                            <div class="specs-top" >
-                              <p>Weight: ${data.weight}</p>
-                              <p>Height: ${data.height}</p>
+                          <div class="reservations-details">
+                            <div class="specs">
+                              <div class="specs-top" >
+                                <p>Weight: ${data.weight}</p>
+                                <p>Height: ${data.height}</p>
+                              </div>
+                              <div class="specs-bottom">
+                                <p>Base experience: ${data.base_experience}</p>
+                                <p>Order: ${data.order}</p>
+                              </div>
                             </div>
-                            <div class="specs-bottom">
-                              <p>Base experience: ${data.base_experience}</p>
-                              <p>Order: ${data.order}</p>
+                            <h2 class="reservation-title" id="reservation-title">Reservations (0)</h2>
+                            <div class="reservations-list" id="reservations-list">
                             </div>
+                            <h2 class="add-reservation" id="add-reservation">Add a Reservation</h2>
+                            <form class="reservation-form" id="reservation-form-${data.id}" action="" name="Add a Reservation">
+                              <label for="name">Your Name</label>
+                              <input type="text" id="name" class="name" placeholder="Your name">
+                              <label for="start_date">Start Date</label>
+                              <input type="date" id="start_date" class="start_date" placeholder="Start Date">
+                              <label for="end_date">End Date</label>
+                              <input type="date" id="end_date" class="end_date" placeholder="End Date">
+                              <button type="submit" id="add-reservation-${data.id}" class="add-reservation">Reserve</button>
+                            </form>
                           </div>
                         </dialog>
          `;
@@ -522,7 +558,11 @@ const fetchPokemons = async () => {
     (0,_numbOfLikes_js__WEBPACK_IMPORTED_MODULE_0__.interactionLike)();
     (0,_commentsPopup_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
     (0,_reservationsModal_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_displayComments_js__WEBPACK_IMPORTED_MODULE_5__["default"])();
+    (0,_commentsForm_js__WEBPACK_IMPORTED_MODULE_7__["default"])();
     (0,_listCounter_js__WEBPACK_IMPORTED_MODULE_1__["default"])(newArray.length, pokeCount);
+    (0,_displayReservations_js__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    (0,_addReservations_js__WEBPACK_IMPORTED_MODULE_6__["default"])();
   } catch (error) {
     const errorMessage = 'Error, try again later.';
     const errorElement = document.createElement('div');
@@ -654,29 +694,292 @@ __webpack_require__.r(__webpack_exports__);
 
 const ReservationModal = () => {
   // Open reservation modal
-  const opnPopBtn = document.querySelectorAll('[data-modal-target]');
-  opnPopBtn.forEach((btn) => {
+  const openModalBtn = document.querySelectorAll('[data-modal-target]');
+  openModalBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
       const dialogContainer = document.querySelector(btn.dataset.modalTarget);
       document.body.classList.add('no-scroll');
       dialogContainer.classList.add('dialog-container');
-      dialogContainer.showModal();
+      if (!dialogContainer.open) {
+        dialogContainer.showModal();
+      }
     });
   });
   // Close reservation modal
-  const closeButton = document.querySelectorAll('[data-close-button]');
-  closeButton.forEach((btnC) => {
-    btnC.addEventListener('click', () => {
-      const popup = btnC.closest('.dialog-container');
-      const dialogContainer = document.querySelector('.dialog-container');
-      popup.close();
-      dialogContainer.classList.remove('dialog-container');
-      document.body.classList.remove('no-scroll');
+  document.addEventListener('DOMContentLoaded', () => {
+    const closeButtons = document.querySelectorAll('[data-close-button]');
+    closeButtons.forEach((closeButton) => {
+      closeButton.addEventListener('click', () => {
+        const dialogContainer = document.querySelector('.dialog-container');
+        if (dialogContainer) {
+          const dialog = dialogContainer.querySelector('dialog');
+          dialog.close();
+          dialogContainer.classList.remove('dialog-container');
+          document.body.classList.remove('no-scroll');
+        }
+      });
     });
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ReservationModal);
+
+
+/***/ }),
+/* 16 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _reservationsCounter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
+
+
+/* Involvement Api */
+const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/reservations';
+
+/* Getting reservations list from the Involvement API */
+const DisplayReservations = async () => {
+  const cardContainers = document.querySelectorAll('.card');
+  cardContainers.forEach((card) => {
+    const reservationsTitle = card.querySelectorAll('.reservation-title');
+    const openModalBtn = card.querySelectorAll('[data-modal-target]');
+    openModalBtn.forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        try {
+          const res = await fetch(`${BASE_URL}?item_id=${btn.id}`);
+          const data = await res.json();
+          const reservationsCounter = data.length;
+          const div = card.querySelector('.reservations-list');
+          div.innerHTML = '';
+          data.forEach((reservation) => {
+            const li = document.createElement('li');
+            li.innerHTML = `${reservation.date_start} - ${reservation.date_end} by ${reservation.username}`;
+            div.appendChild(li);
+          });
+          reservationsTitle.forEach((title) => {
+            if (reservationsCounter > 0) {
+              (0,_reservationsCounter_js__WEBPACK_IMPORTED_MODULE_0__["default"])(reservationsCounter, title);
+            }
+          });
+          return true;
+        } catch (error) {
+          const errorMessage = 'Error, try again later.';
+          return errorMessage;
+        }
+      });
+    });
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DisplayReservations);
+
+/***/ }),
+/* 17 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* Reservations counter */
+const ReservationsCounter = (counter, link) => {
+  link.innerHTML = `Reservations (${counter})`;
+  return counter;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ReservationsCounter);
+
+/***/ }),
+/* 18 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _commentsCounter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+
+
+/* App Api */
+const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/comments';
+
+/* Getting comments list from the Involvement API */
+const DisplayComments = async () => {
+  const cardContainers = document.querySelectorAll('.card');
+  cardContainers.forEach((card) => {
+    const commentsTitle = card.querySelector('.comment-title');
+    const openModalBtn = card.querySelectorAll('[data-modal-target]');
+    openModalBtn.forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        try {
+          const res = await fetch(`${BASE_URL}?item_id=item${btn.id}`);
+          const data = await res.json();
+          const commentsCounter = data.length;
+          const div = card.querySelector('.comments-list');
+          div.innerHTML = '';
+          data.forEach((comment) => {
+            const li = document.createElement('li');
+            li.innerHTML = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
+            div.appendChild(li);
+          });
+          if (commentsCounter > 0) {
+            (0,_commentsCounter_js__WEBPACK_IMPORTED_MODULE_0__["default"])(commentsCounter, commentsTitle);
+          } else {
+            commentsTitle.innerHTML = 'Comments (0)';
+          }
+        } catch (error) {
+          const errorMessage = 'Error, try again later.';
+          const errorElement = document.createElement('div');
+          errorElement.innerText = errorMessage;
+          document.body.appendChild(errorElement);
+        }
+      });
+    });
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DisplayComments);
+
+/***/ }),
+/* 19 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* Comments counter */
+const CommentsCounter = (counter, link) => {
+  link.innerHTML = `Comments (${counter})`;
+  return counter;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CommentsCounter);
+
+
+/***/ }),
+/* 20 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _reservationsCounter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
+
+
+/* Involvement Api */
+const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/reservations';
+
+/* Display new reservations list using the Involvement API */
+const AddReservations = async () => {
+  const cardContainers = document.querySelectorAll('.card');
+  cardContainers.forEach((card) => {
+    const openModalBtn = card.querySelectorAll('.add-reservation');
+    const reservationsTitle = card.querySelectorAll('.reservation-title');
+    openModalBtn.forEach((btn) => {
+      btn.addEventListener('click', async (event) => {
+        event.preventDefault();
+        const reservationForm = card.querySelectorAll('.reservation-form');
+        reservationForm.forEach(async (form) => {
+          const data = {
+            item_id: `${card.id}`,
+            username: form.querySelector('#name').value,
+            date_start: form.querySelector('#start_date').value,
+            date_end: form.querySelector('#end_date').value,
+          };
+          const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+            redirect: 'follow',
+          };
+          await fetch(BASE_URL, requestOptions);
+          form.querySelector('#name').value = '';
+          form.querySelector('#start_date').value = '';
+          form.querySelector('#end_date').value = '';
+          /* Reload Reservations */
+          const res = await fetch(`${BASE_URL}?item_id=${card.id}`);
+          const reservations = await res.json();
+          const reservationsCounter = reservations.length;
+          const div = card.querySelector('.reservations-list');
+          div.innerHTML = '';
+          reservations.forEach((reservation) => {
+            const li = document.createElement('li');
+            li.innerHTML = `${reservation.date_start} - ${reservation.date_end} by ${reservation.username}`;
+            div.appendChild(li);
+          });
+          reservationsTitle.forEach((title) => {
+            if (reservationsCounter > 0) {
+              (0,_reservationsCounter_js__WEBPACK_IMPORTED_MODULE_0__["default"])(reservationsCounter, title);
+            }
+          });
+        });
+      });
+    });
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddReservations);
+
+/***/ }),
+/* 21 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "broadcast": () => (/* binding */ broadcast),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/comments';
+
+// send new score to API
+const broadcast = async (raw) => {
+  const myHeaders = new Headers();
+  myHeaders.append('Content-Type', 'application/json');
+  const requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow',
+  };
+  const request = new Request(BASE_URL);
+  await fetch(request, requestOptions);
+};
+
+/* Getting comments from the form and prepair it to be handeled by the API */
+const postComments = async () => {
+  const cardContainers = document.querySelectorAll('.card');
+  cardContainers.forEach((card) => {
+    const openModalBtn = card.querySelectorAll('.comments-btn');
+    openModalBtn.forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const raw = JSON.stringify({
+          item_id: `${btn.id}`,
+          username: card.querySelector('input').value,
+          comment: card.querySelector('textarea').value,
+        });
+        card.querySelector('input').value = '';
+        card.querySelector('textarea').value = '';
+        await broadcast(raw);
+        /* Reload comments */
+        const res = await fetch(`${BASE_URL}?item_id=${btn.id}`);
+        const data = await res.json();
+        const div = card.querySelector('.comments-list');
+        div.innerHTML = '';
+        data.forEach((comm) => {
+          const li = document.createElement('li');
+          li.innerHTML = `${comm.comment} - ${comm.creation_date} by ${comm.username}`;
+          div.appendChild(li);
+        });
+      });
+    });
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (postComments);
 
 
 /***/ })
