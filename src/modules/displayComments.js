@@ -19,7 +19,7 @@ const DisplayComments = async () => {
           div.innerHTML = '';
           data.forEach((comment) => {
             const li = document.createElement('li');
-            li.innerHTML = `${comment.comment} - ${comment.creation_date} by ${comment.username}`;
+            li.innerHTML = `${comment.creation_date} ${comment.username}: ${comment.comment}`;
             div.appendChild(li);
           });
           if (commentsCounter > 0) {
