@@ -27,11 +27,10 @@ const DisplayReservations = async () => {
               ReservationsCounter(reservationsCounter, title);
             }
           });
+          return true;
         } catch (error) {
           const errorMessage = 'Error, try again later.';
-          const errorElement = document.createElement('div');
-          errorElement.innerText = errorMessage;
-          document.body.appendChild(errorElement);
+          return errorMessage;
         }
       });
     });
