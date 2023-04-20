@@ -1,3 +1,5 @@
+import CommentsCounter from './commentsCounter.js';
+
 const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tngK8NfXluNWvAs7EHbF/comments';
 
 // send new score to API
@@ -19,6 +21,7 @@ const postComments = async () => {
   const cardContainers = document.querySelectorAll('.card');
   cardContainers.forEach((card) => {
     const openModalBtn = card.querySelectorAll('.comments-btn');
+    const commentTitle = card.querySelectorAll('.comment-title');
     openModalBtn.forEach((btn) => {
       btn.addEventListener('click', async () => {
         const raw = JSON.stringify({
@@ -32,12 +35,16 @@ const postComments = async () => {
         /* Reload comments */
         const res = await fetch(`${BASE_URL}?item_id=${btn.id}`);
         const data = await res.json();
+        const commentCounter = data.length;
         const div = card.querySelector('.comments-list');
         div.innerHTML = '';
         data.forEach((comm) => {
           const li = document.createElement('li');
           li.innerHTML = `${comm.comment} - ${comm.creation_date} by ${comm.username}`;
           div.appendChild(li);
+        });
+        commentTitle.forEach((title) => {
+          CommentsCounter(commentCounter, title);
         });
       });
     });

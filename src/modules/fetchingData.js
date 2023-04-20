@@ -57,7 +57,7 @@ const fetchPokemons = async () => {
                                 <p>Order: ${data.order}</p>
                               </div>
                             </div>
-                            <h3 class="comment-title">Comments</h3>
+                            <h3 class="comment-title">Comments (0)</h3>
                             <div class="comments-list" id="comments-list">
                             </div>
                           </div>
