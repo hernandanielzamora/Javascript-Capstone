@@ -33,7 +33,7 @@ const AddReservations = async () => {
           /* Reload Reservations */
           const res = await fetch(`${BASE_URL}?item_id=${card.id}`);
           const reservations = await res.json();
-          const reservationsCounter = data.length;
+          const reservationsCounter = reservations.length;
           const div = card.querySelector('.reservations-list');
           div.innerHTML = '';
           reservations.forEach((reservation) => {
