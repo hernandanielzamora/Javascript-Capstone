@@ -5,7 +5,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   list-style-type: none;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 /* Header - NavBar */
@@ -156,6 +156,7 @@ header {
   margin: auto;
   padding: 2%;
   gap: 2%;
+  box-sizing: initial;
 }
 
 .dialog-container::backdrop {
@@ -178,6 +179,34 @@ header {
 
 .comments-list {
   height: 200px;
+}
+
+.comments-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.comments-form .reservation-title {
+  align-self: center;
+}
+
+label {
+  display: none;
+}
+
+input,
+textarea {
+  padding: 10px;
+}
+
+.comments-form textarea {
+  width: 100%;
+}
+
+.comments-btn {
+  padding: 5px;
 }
 
 /* Reservations Modal */
@@ -224,6 +253,15 @@ footer h2 {
   .nav-bar {
     margin-left: 7%;
     font-size: 1.25em;
+  }
+
+  /* Comments Popup */
+  .comments-form {
+    width: 65%;
+  }
+
+  .comments-form textarea {
+    width: 50%;
   }
 
   /* Footer */
