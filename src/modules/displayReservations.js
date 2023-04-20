@@ -7,7 +7,7 @@ const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capston
 const DisplayReservations = async () => {
   const cardContainers = document.querySelectorAll('.card');
   cardContainers.forEach((card) => {
-    const reservationsTitle = card.querySelector('.reservation-title');
+    const reservationsTitle = card.querySelectorAll('.reservation-title');
     const openModalBtn = card.querySelectorAll('[data-modal-target]');
     openModalBtn.forEach((btn) => {
       btn.addEventListener('click', async () => {
@@ -19,19 +19,18 @@ const DisplayReservations = async () => {
           div.innerHTML = '';
           data.forEach((reservation) => {
             const li = document.createElement('li');
-            li.innerHTML = `${reservation.date_start} - ${reservation.date_end} por ${reservation.username}`;
+            li.innerHTML = `${reservation.date_start} - ${reservation.date_end} by ${reservation.username}`;
             div.appendChild(li);
           });
-          if (reservationsCounter > 0) {
-            ReservationsCounter(reservationsCounter, reservationsTitle);
-          } else {
-            reservationsTitle.innerHTML = 'Reservations (0)';
-          }
+          reservationsTitle.forEach((title) => {
+            if (reservationsCounter > 0) {
+              ReservationsCounter(reservationsCounter, title);
+            }
+          });
+          return true;
         } catch (error) {
           const errorMessage = 'Error, try again later.';
-          const errorElement = document.createElement('div');
-          errorElement.innerText = errorMessage;
-          document.body.appendChild(errorElement);
+          return errorMessage;
         }
       });
     });

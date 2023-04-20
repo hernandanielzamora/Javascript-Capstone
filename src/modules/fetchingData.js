@@ -4,6 +4,7 @@ import popGenrato from './commentsPopup.js';
 import ReservationModal from './reservationsModal.js';
 import DisplayReservations from './displayReservations.js';
 import DisplayComments from './displayComments.js';
+import AddReservations from './addReservations.js';
 import postComments from './commentsForm.js';
 
 const pokeCount = document.getElementById('poke-count');
@@ -91,6 +92,16 @@ const fetchPokemons = async () => {
                             <h2 class="reservation-title" id="reservation-title">Reservations (0)</h2>
                             <div class="reservations-list" id="reservations-list">
                             </div>
+                            <h2 class="add-reservation" id="add-reservation">Add a Reservation</h2>
+                            <form class="reservation-form" id="reservation-form-${data.id}" action="" name="Add a Reservation">
+                              <label for="name">Your Name</label>
+                              <input type="text" id="name" class="name" placeholder="Your name">
+                              <label for="start_date">Start Date</label>
+                              <input type="date" id="start_date" class="start_date" placeholder="Start Date">
+                              <label for="end_date">End Date</label>
+                              <input type="date" id="end_date" class="end_date" placeholder="End Date">
+                              <button type="submit" id="add-reservation-${data.id}" class="add-reservation">Reserve</button>
+                            </form>
                           </div>
                         </dialog>
          `;
@@ -107,6 +118,7 @@ const fetchPokemons = async () => {
     postComments();
     pokemonCount(newArray.length, pokeCount);
     DisplayReservations();
+    AddReservations();
   } catch (error) {
     const errorMessage = 'Error, try again later.';
     const errorElement = document.createElement('div');
