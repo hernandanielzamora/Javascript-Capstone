@@ -56,12 +56,12 @@ const fetchPokemons = async () => {
                                 <p>Order: ${data.order}</p>
                               </div>
                             </div>
-                            <h2 class="reservation-title">Comments</h2>
+                            <h3 class="comment-title">Comments</h3>
                             <div class="comments-list" id="comments-list">
                             </div>
                           </div>
                           <form class="comments-form" action="">
-                            <h2 class="reservation-title">Add a comment</h2>
+                            <h3 class="comments-title">Add a comment</h3>
                             <label for="name"></label>
                             <input type="text" id="name" placeholder="Your name">
                             <label for="insights"></label>
